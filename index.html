@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/images/web_header.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">THE AUTHORS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">EVENTS AND VENUES</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Machine Learning<br>and Wi-Fi</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE TUTORIAL</span></h5>
+    <p>IEEE 802.11 networks (aka Wi-Fi) and Artificial Intelligence and Machine Learning (AI/ML) are called to redefine the next generation of wireless unlicensed communications systems. On one hand, next-generation Wi-Fi networks are required to address critical design limitations to meet the stringent requirements of future Internet-based applications like eXtended Reality (XR) or multisense communications. AIML has largely shown outstanding results in countless applications (e.g., image recognition, chatbots), thus becoming a cornerstone technology for many areas. Now, the use of AIML as a key technology for driving the evolution of IEEE 802.11 networks is under study. The benefits that AIML can bring to Wi-Fi go from providing the so eagerly desired reliability and extremely high performance to addressing the technical innovations in new standards. In this tutorial, we begin with an overview of recent Wi-Fi evolution and a primer on AI/ML techniques, and how these technologies can benefit from one another. Next, we present the state of the art on how researchers have foreseen the integration of ML and Wi-Fi through relevant use cases. We also showcase existing libraries to perform joint ML and Wi-Fi research. Moreover, to reinforce the concepts lectured, and for the sake of making the tutorial more interactive, we provide a hands-on activity whereby participants will train and use ML models to address key Wi-Fi problems on-site, using some of the most popular ML libraries. Finally, we outline future research areas.</p>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
